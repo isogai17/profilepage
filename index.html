@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>磯貝 正五郎 | Portfolio - 観察し、整え、正確に届ける。</title>
+  <meta name="description" content="磯貝正五郎のポートフォリオサイト。品質管理で培った観察力と正確性を、Webデザインに活かします。HTML/CSS、Photoshop、Illustratorなどを用いたWeb制作実績を掲載。">
+  <meta name="author" content="Isogai Masagoro">
+
+  <!-- OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="磯貝 正五郎 | Portfolio">
+  <meta property="og:description" content="観察し、整え、正確に届ける。Web Designer & QA Engineer">
+  <meta property="og:image" content="assets/images/ogp.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ============================================
+       Header
+       ============================================ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#hero" class="header__logo">
+        <span class="header__logo-en">ISOGAI</span>
+        <span class="header__logo-jp">磯貝 正五郎</span>
+      </a>
+
+      <button class="header__toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="globalNav">
+        <span class="header__toggle-bar"></span>
+        <span class="header__toggle-bar"></span>
+        <span class="header__toggle-bar"></span>
+      </button>
+
+      <nav class="header__nav" id="globalNav" aria-label="グローバルナビゲーション">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a href="#about" class="header__nav-link">About</a></li>
+          <li class="header__nav-item"><a href="#skills" class="header__nav-link">Skills</a></li>
+          <li class="header__nav-item"><a href="#experience" class="header__nav-link">Experience</a></li>
+          <li class="header__nav-item"><a href="#portfolio" class="header__nav-link">Portfolio</a></li>
+          <li class="header__nav-item"><a href="#contact" class="header__nav-link header__nav-link--cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================
+         Hero
+         ============================================ -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <p class="hero__eyebrow">PORTFOLIO / 2026</p>
+        <h1 class="hero__title">
+          <span class="hero__title-en">ISOGAI MASAGORO</span>
+          <span class="hero__title-jp">観察し、整え、<br class="u-sp-only">正確に届ける。</span>
+        </h1>
+        <p class="hero__lead">
+          Engineer &amp; Web Designer<br>
+          鉄道の研究開発に従事しながら、品質管理で培った観察力と正確性を、Webデザインに活かします。
+        </p>
+        <dl class="hero__meta">
+          <div class="hero__meta-item">
+            <dt class="hero__meta-key">ROLE</dt>
+            <dd class="hero__meta-val">鉄道研究開発エンジニア</dd>
+          </div>
+          <div class="hero__meta-item">
+            <dt class="hero__meta-key">FOCUS</dt>
+            <dd class="hero__meta-val">Web Design / 品質管理</dd>
+          </div>
+          <div class="hero__meta-item">
+            <dt class="hero__meta-key">BASE</dt>
+            <dd class="hero__meta-val">Tokyo, Japan</dd>
+          </div>
+        </dl>
+        <div class="hero__actions">
+          <a href="#portfolio" class="button button--primary">View My Works</a>
+          <a href="#contact" class="button button--outline">Contact Me</a>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="次のセクションへ">
+        <span class="hero__scroll-text">SCROLL</span>
+        <span class="hero__scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- ============================================
+         About
+         ============================================ -->
+    <section class="section about" id="about">
+      <div class="section__inner">
+        <header class="section__head">
+          <span class="section__number">01</span>
+          <h2 class="section__title">
+            <span class="section__title-en">About Me</span>
+            <span class="section__title-jp">自己紹介</span>
+          </h2>
+        </header>
+
+        <div class="about__body">
+          <div class="about__visual">
+            <div class="about__photo">
+              <img src="assets/images/profile.jpg" alt="磯貝 正五郎のプロフィール写真" class="about__photo-img" loading="lazy" width="1200" height="1500">
+            </div>
+          </div>
+
+          <div class="about__content">
+            <p class="about__lead">
+              はじめまして、磯貝 正五郎と申します。
+            </p>
+            <p class="about__text">
+              システム開発の検査業務、医療系サービスの商品企画とWeb制作、ネットワークカメラの品質管理を経て、現在は<strong>鉄道関連の研究開発エンジニア</strong>として、車両の実験開発を中心に社会基盤を支えるものづくりに携わっています。
+            </p>
+            <p class="about__text">
+              これまでの現場で磨いてきたのは、「全体の流れと自分の役割を把握しながら、細部まで丁寧に仕上げる姿勢」です。<br>
+              正確性が求められる業務で培った観察力と改善提案力を、Webデザインの分野にも活かし、伝わりやすく使いやすいデザインを追求していきたいと考えています。
+            </p>
+
+            <ul class="about__strengths">
+              <li class="strength">
+                <span class="strength__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg>
+                </span>
+                <h3 class="strength__title">正確性</h3>
+                <p class="strength__text">仕様書作成からテスト工程まで、手順を遵守し、ミスを未然に防ぐ姿勢を培ってきました。</p>
+              </li>
+              <li class="strength">
+                <span class="strength__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+                </span>
+                <h3 class="strength__title">観察力</h3>
+                <p class="strength__text">状況を客観的に捉え、改善点を見つけて提案する力。「自己観察力」を強みに業務改善に取り組んできました。</p>
+              </li>
+              <li class="strength">
+                <span class="strength__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+                </span>
+                <h3 class="strength__title">丁寧さ</h3>
+                <p class="strength__text">資料作成、コーディング、デザインのいずれにおいても、最後まで気を抜かない仕上げを心がけています。</p>
+              </li>
+            </ul>
+
+            <dl class="about__profile">
+              <div class="about__profile-row">
+                <dt>Name</dt>
+                <dd>磯貝 正五郎（いそがい まさごろう）</dd>
+              </div>
+              <div class="about__profile-row">
+                <dt>Based in</dt>
+                <dd>東京都八王子市（最寄駅: 京王相模原線 南大沢駅）</dd>
+              </div>
+              <div class="about__profile-row">
+                <dt>Education</dt>
+                <dd>都市環境学</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         Skills
+         ============================================ -->
+    <section class="section skills" id="skills">
+      <div class="section__inner">
+        <header class="section__head">
+          <span class="section__number">02</span>
+          <h2 class="section__title">
+            <span class="section__title-en">Skills</span>
+            <span class="section__title-jp">スキル</span>
+          </h2>
+        </header>
+
+        <div class="skills__grid">
+          <div class="skill-card">
+            <p class="skill-card__category">Web Development</p>
+            <h3 class="skill-card__title">コーディング</h3>
+            <ul class="skill-card__list">
+              <li>HTML5 / CSS3（レスポンシブ対応）</li>
+              <li>JavaScript（基礎）</li>
+              <li>WordPress（運用・カスタマイズ）</li>
+              <li>BEM設計 / セマンティックHTML</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <p class="skill-card__category">Design</p>
+            <h3 class="skill-card__title">デザインツール</h3>
+            <ul class="skill-card__list">
+              <li>Adobe Photoshop</li>
+              <li>Adobe Illustrator</li>
+              <li>Adobe XD / Figma</li>
+              <li>Adobe Premiere Pro</li>
+              <li>LP / バナー / 画像編集</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <p class="skill-card__category">QA &amp; Operations</p>
+            <h3 class="skill-card__title">品質管理・業務改善</h3>
+            <ul class="skill-card__list">
+              <li>仕様分析・設計・テスト工程</li>
+              <li>PHP / MySQL（システム制御）</li>
+              <li>Excel（MOS取得）／関数活用</li>
+              <li>Power Automate による自動化</li>
+              <li>C言語 / VBA（基礎）</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <p class="skill-card__category">Marketing</p>
+            <h3 class="skill-card__title">マーケティング</h3>
+            <ul class="skill-card__list">
+              <li>Googleデジタルマーケティング</li>
+              <li>LP企画・メルマガ制作</li>
+              <li>商品企画・デジタル診察券アプリ企画</li>
+              <li>UI/UX改善提案</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="skills__certs">
+          <h3 class="skills__certs-title">資格・認定</h3>
+          <ul class="skills__certs-list">
+            <li class="cert-badge">Webクリエイター能力認定試験 エキスパート</li>
+            <li class="cert-badge">MOS Excel 2019</li>
+            <li class="cert-badge">Googleデジタルマーケティング公式認定</li>
+            <li class="cert-badge">生成AIパスポート</li>
+            <li class="cert-badge">コミュニケーション検定</li>
+            <li class="cert-badge">食品衛生責任者</li>
+            <li class="cert-badge">安全衛生推進者</li>
+            <li class="cert-badge">普通自動車第一種運転免許</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         Experience
+         ============================================ -->
+    <section class="section experience" id="experience">
+      <div class="section__inner">
+        <header class="section__head">
+          <span class="section__number">03</span>
+          <h2 class="section__title">
+            <span class="section__title-en">Experience</span>
+            <span class="section__title-jp">経歴</span>
+          </h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline__item timeline__item--current">
+            <div class="timeline__body">
+              <p class="timeline__company">鉄道技術<span class="timeline__now">NOW</span></p>
+              <h3 class="timeline__role">鉄道関連の研究開発エンジニア</h3>
+              <p class="timeline__description">
+                鉄道の研究開発をサポートする鉄道技術のトータルエンジニアリングに従事。現在は車両の実験開発を中心に担当し、社会基盤を支える専門技術の現場で、正確性と継続的改善を意識して取り組んでいます。
+              </p>
+              <ul class="timeline__tags">
+                <li>車両実験開発</li>
+                <li>研究開発支援</li>
+                <li>社会基盤</li>
+                <li>鉄道技術</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__body">
+              <p class="timeline__company">カメラ事業 / IT</p>
+              <h3 class="timeline__role">品質管理</h3>
+              <p class="timeline__description">
+                ネットワークカメラの検査・設定・トラブルシューティングを担当。システム制御の開発に関わる中でPHP・MySQLにも触れ、Excel・Power Automateを活用したデータ入力や業務フローの改善にも取り組み、報告書作成や業務効率化を実現しました。
+              </p>
+              <ul class="timeline__tags">
+                <li>品質管理</li>
+                <li>システム制御</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>Power Automate</li>
+                <li>Excel</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__body">
+              <p class="timeline__company">医療業界 / 商品企画</p>
+              <h3 class="timeline__role">Web制作・商品開発</h3>
+              <p class="timeline__description">
+                医療分野の業務改善ツールサービスにおいて、LP・HPのデザイン調整、HTML/CSSによるコーディング、レスポンシブ対応を担当。WordPressによるサイト運用やブログ記事の作成、Photoshop/Illustratorでのバナー制作・画像編集も実施し、デザインと実装、運用までを一貫して担当する経験を積みました。
+              </p>
+              <ul class="timeline__tags">
+                <li>HTML/CSS</li>
+                <li>LP制作</li>
+                <li>WordPress</li>
+                <li>ブログ記事作成</li>
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+                <li>レスポンシブ</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__body">
+              <p class="timeline__company">自動車業界 / システム開発</p>
+              <h3 class="timeline__role">保守運用・検査業務</h3>
+              <p class="timeline__description">
+                大手自動車メーカー向けシステムの検査業務を担当。仕様書作成からテストまで幅広く対応し、正確性と手順遵守の姿勢を培いました。
+              </p>
+              <ul class="timeline__tags">
+                <li>仕様書作成</li>
+                <li>テスト工程</li>
+                <li>C言語</li>
+                <li>VBA</li>
+              </ul>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================================
+         Portfolio
+         ============================================ -->
+    <section class="section portfolio" id="portfolio">
+      <div class="section__inner">
+        <header class="section__head">
+          <span class="section__number">04</span>
+          <h2 class="section__title">
+            <span class="section__title-en">Portfolio</span>
+            <span class="section__title-jp">制作実績</span>
+          </h2>
+        </header>
+
+        <p class="portfolio__note">
+          ※ 以下は実績の枠組みです。実際のスクリーンショットや詳細は順次更新予定です。
+        </p>
+
+        <ul class="portfolio__grid">
+          <!-- Work 1 -->
+          <li class="work-card">
+            <div class="work-card__thumb">
+              <div class="work-card__placeholder" aria-hidden="true">
+                <span class="work-card__placeholder-no">01</span>
+                <span class="work-card__placeholder-label">LP DESIGN</span>
+              </div>
+            </div>
+            <div class="work-card__body">
+              <p class="work-card__category">Web Design</p>
+              <h3 class="work-card__title">医療系サービス LP制作</h3>
+              <p class="work-card__text">
+                医療業界向けデジタル診察券アプリのランディングページデザインおよびコーディング。レスポンシブ対応と読みやすさを重視。
+              </p>
+              <ul class="work-card__tags">
+                <li>HTML</li><li>CSS</li><li>Photoshop</li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- Work 2 -->
+          <li class="work-card">
+            <div class="work-card__thumb">
+              <div class="work-card__placeholder" aria-hidden="true">
+                <span class="work-card__placeholder-no">02</span>
+                <span class="work-card__placeholder-label">HP UPDATE</span>
+              </div>
+            </div>
+            <div class="work-card__body">
+              <p class="work-card__category">Web Development</p>
+              <h3 class="work-card__title">企業ホームページ修正・更新</h3>
+              <p class="work-card__text">
+                既存HPの修正・更新業務。情報追加、デザイン調整、表示最適化に取り組みました。
+              </p>
+              <ul class="work-card__tags">
+                <li>HTML</li><li>CSS</li><li>WordPress</li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- Work 3 -->
+          <li class="work-card">
+            <div class="work-card__thumb">
+              <div class="work-card__placeholder" aria-hidden="true">
+                <span class="work-card__placeholder-no">03</span>
+                <span class="work-card__placeholder-label">BANNER</span>
+              </div>
+            </div>
+            <div class="work-card__body">
+              <p class="work-card__category">Graphic Design</p>
+              <h3 class="work-card__title">バナー制作・画像編集</h3>
+              <p class="work-card__text">
+                Photoshop/Illustratorを用いた複数のバナー制作。訴求ポイントを明確化し、視認性とクリック率を意識したデザイン。
+              </p>
+              <ul class="work-card__tags">
+                <li>Photoshop</li><li>Illustrator</li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- Work 4 -->
+          <li class="work-card">
+            <div class="work-card__thumb">
+              <div class="work-card__placeholder" aria-hidden="true">
+                <span class="work-card__placeholder-no">04</span>
+                <span class="work-card__placeholder-label">AUTOMATION</span>
+              </div>
+            </div>
+            <div class="work-card__body">
+              <p class="work-card__category">Operations</p>
+              <h3 class="work-card__title">業務フロー自動化</h3>
+              <p class="work-card__text">
+                ExcelとPower Automateを連携させ、データ入力業務を自動化。手作業の削減と人的ミスの防止を実現。
+              </p>
+              <ul class="work-card__tags">
+                <li>Power Automate</li><li>Excel</li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- Work 5 -->
+          <li class="work-card">
+            <div class="work-card__thumb">
+              <div class="work-card__placeholder" aria-hidden="true">
+                <span class="work-card__placeholder-no">05</span>
+                <span class="work-card__placeholder-label">VIDEO</span>
+              </div>
+            </div>
+            <div class="work-card__body">
+              <p class="work-card__category">Video Editing</p>
+              <h3 class="work-card__title">映像編集</h3>
+              <p class="work-card__text">
+                Premiere Proを用いた映像編集。視覚的な表現力と構成力を活かしたクリエイティブ制作。
+              </p>
+              <ul class="work-card__tags">
+                <li>Premiere Pro</li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- Work 6 -->
+          <li class="work-card">
+            <div class="work-card__thumb">
+              <div class="work-card__placeholder" aria-hidden="true">
+                <span class="work-card__placeholder-no">06</span>
+                <span class="work-card__placeholder-label">THIS SITE</span>
+              </div>
+            </div>
+            <div class="work-card__body">
+              <p class="work-card__category">Web Design</p>
+              <h3 class="work-card__title">本ポートフォリオサイト</h3>
+              <p class="work-card__text">
+                HTML/CSS（BEM設計）とVanilla JavaScriptで構築。アクセシビリティ、レスポンシブ、パフォーマンスを意識したセルフプロジェクト。
+              </p>
+              <ul class="work-card__tags">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li><li>BEM</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================
+         Contact
+         ============================================ -->
+    <section class="section contact" id="contact">
+      <div class="section__inner">
+        <header class="section__head">
+          <span class="section__number">05</span>
+          <h2 class="section__title">
+            <span class="section__title-en">Contact</span>
+            <span class="section__title-jp">お問い合わせ</span>
+          </h2>
+        </header>
+
+        <div class="contact__body">
+          <div class="contact__intro">
+            <p class="contact__lead">
+              ご質問・ご相談・お仕事のご依頼など、お気軽にお問い合わせください。
+            </p>
+            <p class="contact__text">
+              通常2〜3営業日以内に返信いたします。
+            </p>
+            <ul class="contact__info">
+              <li class="contact__info-item">
+                <span class="contact__info-label">Email</span>
+                <a href="mailto:masagoro.isogai@gmail.com" class="contact__info-value">masagoro.isogai@gmail.com</a>
+              </li>
+              <li class="contact__info-item">
+                <span class="contact__info-label">Based in</span>
+                <span class="contact__info-value">東京都八王子市</span>
+              </li>
+            </ul>
+          </div>
+
+          <!--
+            お問い合わせフォーム
+            ホスティング先に応じて以下のいずれかを有効化してください。
+            ・Netlify Forms: <form> に data-netlify="true" を付与（現状の設定）
+            ・Formspree: action="https://formspree.io/f/YOUR_FORM_ID" に変更
+          -->
+          <form class="contact__form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact">
+            <p class="contact__form-hidden">
+              <label>このフィールドは入力しないでください: <input name="bot-field"></label>
+            </p>
+
+            <div class="form-field">
+              <label for="company" class="form-field__label">会社名・団体名 <span class="form-field__optional">任意</span></label>
+              <input type="text" id="company" name="company" class="form-field__input" autocomplete="organization">
+            </div>
+
+            <div class="form-field">
+              <label for="name" class="form-field__label">お名前 <span class="form-field__required">必須</span></label>
+              <input type="text" id="name" name="name" class="form-field__input" required autocomplete="name">
+            </div>
+
+            <div class="form-field">
+              <label for="email" class="form-field__label">メールアドレス <span class="form-field__required">必須</span></label>
+              <input type="email" id="email" name="email" class="form-field__input" required autocomplete="email">
+            </div>
+
+            <div class="form-field">
+              <label for="subject" class="form-field__label">件名</label>
+              <input type="text" id="subject" name="subject" class="form-field__input">
+            </div>
+
+            <div class="form-field">
+              <label for="message" class="form-field__label">お問い合わせ内容 <span class="form-field__required">必須</span></label>
+              <textarea id="message" name="message" class="form-field__textarea" rows="6" required></textarea>
+            </div>
+
+            <div class="form-field form-field--check">
+              <label class="form-check">
+                <input type="checkbox" name="privacy" required class="form-check__input">
+                <span class="form-check__text">プライバシーポリシーに同意します</span>
+              </label>
+            </div>
+
+            <button type="submit" class="button button--primary button--full">送信する</button>
+            <p class="contact__form-note" id="formNote" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================
+       Footer
+       ============================================ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <a href="#hero" class="footer__logo">
+        <span class="footer__logo-en">ISOGAI MASAGORO</span>
+        <span class="footer__logo-jp">磯貝 正五郎</span>
+      </a>
+
+      <nav class="footer__nav" aria-label="フッターナビゲーション">
+        <ul class="footer__nav-list">
+          <li><a href="#about" class="footer__nav-link">About</a></li>
+          <li><a href="#skills" class="footer__nav-link">Skills</a></li>
+          <li><a href="#experience" class="footer__nav-link">Experience</a></li>
+          <li><a href="#portfolio" class="footer__nav-link">Portfolio</a></li>
+          <li><a href="#contact" class="footer__nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <p class="footer__copy">
+        <small>&copy; <span id="year">2026</span> Isogai Masagoro. All rights reserved.</small>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Page Top Button -->
+  <button class="page-top" id="pageTop" aria-label="ページトップへ戻る">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
