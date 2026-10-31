@@ -1830,3 +1830,6 @@ body.is-nav-open { overflow: hidden; }
 @media (min-width: 1024px) {
   .header__nav-link:hover::after { width: 100%; }
 }
+
+/* Keep supplied portfolio artwork visible in full. */
+.work-card__image--contain { object-fit: contain; background-color: #fff; }
